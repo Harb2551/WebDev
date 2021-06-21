@@ -26,6 +26,17 @@ body {
   border-radius: 20%;
 }
 
+.start-btn{
+  margin: 25px;
+  display: inline-block;
+  height: 100px;
+  width: 350px;
+  border: 0px solid;
+  font-size : 5rem;
+  color : #D3212D;
+  background-color: #FFBF00;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;

@@ -51,6 +51,16 @@ document.addEventListener("keypress",function(){
   }
 });
 
+document.querySelector(".start-btn").addEventListener("click",function(){
+  if(!play || !level){
+    level = 1;
+    play = true;
+    arr = [];
+    start();
+  }
+  this.style.visibility = "hidden";
+})
+
 for(var i=0;i<document.querySelectorAll(".btn").length;i++){
     document.querySelectorAll(".btn")[i].addEventListener("click",function (){
     var activebutton = this;
@@ -78,6 +88,7 @@ for(var i=0;i<document.querySelectorAll(".btn").length;i++){
         target.classList.remove("game-over");
       },200);
       play = false;
+      document.querySelector(".start-btn").style.visibility = "visible";
     }
   })
 }
