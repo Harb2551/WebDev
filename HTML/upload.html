@@ -1,0 +1,19 @@
+<html>
+<head><title>upload</title></head>
+<body>
+<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="upload1.js"></script>
+<h1> UPLOAD AND CHANGE BACKGROUND </h1>
+<canvas id="p"></canvas>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<canvas id="q"></canvas>
+<br><p id="s"><b>FOREGROUND IMAGE</b></p>&emsp;
+<input type="file" multiple="false" accept="image/*" id="fore" onchange="uploadfore()"> 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+<p id="t">BACKGROUND IMAGE</p>&emsp;
+<input type="file" multiple="false" accept="image/*" id="back" onchange="uploadback()"><br><br>
+<input type="button" value="Change Background" id="a" onclick="greenscreen()">
+<input type="button" value="grayscale" onclick="grayscale()">
+<style>canvas {width:500;height:350; border:4px solid green}
+#s {color:red; font-size:10pt} #t {color:blue; font-size:10pt}
+</style></body></html>
